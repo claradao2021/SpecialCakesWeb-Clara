@@ -1,1 +1,352 @@
+/* ============================================
+   RESET CSS - Compatible with all browsers.
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================================
+    APPLICABLE TO THE ENTIRE WEBSITE
+   ============================================ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #0C243C;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #0C243C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #E94D40;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #E94D40;
+}
+
+/* ============================================
+   HEADER + NAVIGATION (Applies to all pages)
+   ============================================ */
+header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #E94D40;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.main-title h2 {
+  font-size: 1.2rem;
+  color: #0C243C;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: #0C243C;
+}
+
+nav ul li a:hover {
+  border-color: #E94D40;
+  background-color: #E94D40;
+  color: white;
+  text-decoration: none;
+}
+p {
+    margin-bottom: 1.2rem;     /* Khoảng cách giữa các đoạn văn */
+    line-height: 1.5;          /* Chiều cao dòng dễ đọc */
+    color: #333;
+}
+/* ============================================
+   FOOTER (Applies to all pages)
+   ============================================ */
+footer.footer {
+    background-color: #0C243C;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+footer.footer p {
+    color: white;
+    margin: 0;
+}
+
+/* ============================================
+   BANNER (Applies to all pages)
+   ============================================ */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* ============================================
+    INDEX (HOME PAGE)
+   ============================================ */
+.welcome {
+  text-align: center;
+  margin: 2rem 0;
+  
+}
+
+.welcome h1 {
+  color: #E94D40;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.box-left {
+  flex: 1;
+}
+
+.box-right {
+  flex: 1;
+}
+
+.box-right img {
+  width: 100%;
+  border-radius: 8px;
+  display: block; 
+}
+
+.visit-us {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Bakery Hours - Kéo dài hết chiều ngang */
+.bakery-hours {
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;                    /* Kéo dài hết chiều ngang */
+    margin-bottom: 1.5rem;
+}
+
+.map iframe {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+
+/* ============================================
+    CAKES FOR SALE PAGE
+   ============================================ */
+.cake-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.cake-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cake-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.cake-item h3 {
+  color: #E94D40;
+  margin: 0.5rem 0;
+}
+
+.order-section {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.order-form, .cake-prices, .order-image {
+  flex: 1;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.order-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: Arial;
+}
+
+form textarea {
+  height: 80px;
+}
+
+button {
+  background-color: #E94D40;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0C243C;
+}
+
+/* ============================================
+   ABOUT PAGE
+   ============================================ */
+.section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-box, .image-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.image-box img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #E94D40;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  color: #0C243C;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  color: #E94D40;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 8px;
+}
 
