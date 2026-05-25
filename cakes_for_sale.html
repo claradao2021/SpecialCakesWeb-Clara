@@ -57,7 +57,7 @@
 
     <!-- ITEM 1 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.3.Specialtycake_975.jpg" alt="Specialty cake image">
+      <a href="images/Cake_for_sale/2.3.Specialtycake_975.jpg">
         <img src="images/Cake_for_sale/2.3.Specialtycake_300.jpg" alt="Specialty cake image">
       </a>
       <h2>Specialty cake</h2>
@@ -67,7 +67,7 @@
 
     <!-- ITEM 2 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.4.flavouredcake_975.jpg" alt="Flavoured cake image">
+      <a href="images/Cake_for_sale/2.4.flavouredcake_975.jpg">
         <img src="images/Cake_for_sale/2.4.flavouredcake_300.jpg" alt="Flavoured cake image">
       </a>
       <h2>Flavoured cake</h2>
@@ -77,7 +77,7 @@
 
     <!-- ITEM 3 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.5.cheesecake_975.jpg" alt="Cheesecakes image">
+      <a href="images/Cake_for_sale/2.5.cheesecake_975.jpg">
         <img src="images/Cake_for_sale/2.5.cheesecake_300.jpg" alt="Cheesecakes image">
       </a>
       <h2>Cheesecakes</h2>
@@ -87,7 +87,7 @@
 
     <!-- ITEM 4 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.7.cupcakes_975.jpg" alt="Cup cakes image">
+      <a href="images/Cake_for_sale/2.7.cupcakes_975.jpg">
         <img src="images/Cake_for_sale/2.7.cupcakes_300.jpg" alt="Cup cakes image">
       </a>
       <h2>Cup cakes</h2>
@@ -97,7 +97,7 @@
 
     <!-- ITEM 5 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.6.browneis_975.jpg" alt="Brownies image">
+      <a href="images/Cake_for_sale/2.6.browneis_975.jpg">
         <img src="images/Cake_for_sale/2.6.browneis_300.jpg" alt="Brownies image">
       </a>
       <h2>Brownies</h2>
@@ -107,7 +107,7 @@
 
     <!-- ITEM 6 -->
     <div class="cake-item">
-      <a href="images/Cake_for_sale/2.2.macarons_975.jpg" alt="Macaron image">
+      <a href="images/Cake_for_sale/2.2.macarons_975.jpg">
         <img src="images/Cake_for_sale/2.2.macarons_300.jpg" alt="Macaron image">
       </a>
       <h2>Macaron</h2>
@@ -159,52 +159,86 @@
 
   
   <!-- BOX UNDER -->
-  <div class="order-section">
+    <div class="order-section">
 
- <div class="order-form">
-  <h2>How to order</h2>
+        <!-- Cake Prices -->
+        <div class="cake-prices">
+            <h2>Cake Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cake size</th>
+                        <th>Suitable for</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Small</td>
+                        <td>8–10 people</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>10–12 people</td>
+                        <td>$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td>16–20 people</td>
+                        <td>$100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+        <!-- Order Image -->
+        <div class="order-image">
+            <img src="images/Cake_for_sale/2.3.Specialtycake_975.jpg" alt="Special occasion cake">
+        </div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <!-- Order Form -->
+        <div class="order-form">
+            <h2>How to order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <label for="phone">Phone:</label>
-     <input type="tel" id="phone" name="phone" 
-       pattern="[0-9]{2}-[0-9]{8}" 
-       placeholder="02-12345678" 
-       required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-    <div class="form-group">
-      <label for="cake-type">Type of cake required</label>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{2}-[0-9]{8}"
+                       placeholder="02-12345678"
+                       required>
 
-      <select id="cake-type" name="cake-type">
-        <option value="" selected>Please select</option>
-        <option value="speciality">Speciality cake</option>
-        <option value="flavoured">Flavoured cake</option>
-        <option value="cheesecake">Cheesecake</option>
-        <option value="brownies">Brownies</option>
-        <option value="cupcakes">Cupcakes</option>
-        <option value="macarons">Macarons</option>
-      </select>
-    </div>
+                <div class="form-group">
+                    <label for="cake-type">Type of cake required</label>
+                    <select id="cake-type" name="cake-type" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="speciality">Speciality cake</option>
+                        <option value="flavoured">Flavoured cake</option>
+                        <option value="cheesecake">Cheesecake</option>
+                        <option value="brownies">Brownies</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="macarons">Macarons</option>
+                    </select>
+                </div>
 
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
 
-    <label for="comment">Comment:</label>
-    <textarea id="comment" name="comment"></textarea>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment"></textarea>
 
-    <!-- BUTTON -->
-    <button type="submit">Send enquiry</button>
-  </form>
-</div>
+                <button type="submit">Send enquiry</button>
+            </form>
+        </div>
 
+    </div>   <!-- Đóng order-section -->
 
-
-</section>
+</section>   <!-- Đóng section.cakes -->
 
 </main>
 
